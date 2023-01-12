@@ -45,5 +45,5 @@ echo " show "
 echo "======================="
 echo " branch switched "
 
-git checkout -d main
+git checkout -d tester
 
