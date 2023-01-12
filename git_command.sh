@@ -36,8 +36,10 @@ git status
 echo "========================"
 echo " log "
 
-git log
+#git log
 
 echo " show "
 
-git show
+#git show
+
+
