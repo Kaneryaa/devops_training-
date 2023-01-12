@@ -33,8 +33,11 @@ echo " status "
 
 git status 
 
+echo "========================"
+echo " log "
 
+git log
 
+echo " show "
 
-
-
+git show
