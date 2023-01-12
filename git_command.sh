@@ -28,6 +28,11 @@ echo "===================="
 echo "commit"
 git commit -m " commits your all files and folder sucessfully:"
 
+echo "=================="
+echo " status "
+
+git status 
+
 
 
 
