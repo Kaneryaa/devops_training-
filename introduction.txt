@@ -1,0 +1,20 @@
+****************  orchestration tools ********************
+ 1.  DOcker Swarm     2. kubernetes  3.Mesosphere Marathon 
+ 4. AWS ECS & EKS  5. Azure Container Services 6 . google container engine
+ 7.  coreOS feet 8. openShift 
+
+***************** kubernetes history ********************
+1. Create by google to manage their container AKA barg 
+2. Mid 2014 , goggle introduced kubernetes as an open source version of barg 
+3. 2016 kubernetes goes Mainstream ..
+    . Kops , . Minikube , .kubeadm 
+
+**************  Master: kube API server *********************
+1. Main Hero!  handles all the requests and enables communication across stack services 
+2.  admin connects to it using kubectl CLI	
+
+**************  Master: ETCD Server **********************
+1. storeg all the information 
+2. consistent and highly-availabe key values stored used as kubernates 
+3. kube API stores retrives info from it 
+4.  should be backed up regulary 
