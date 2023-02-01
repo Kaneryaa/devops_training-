@@ -47,3 +47,50 @@ echo " branch switched "
 
 git checkout -d tester
 
+
+echo "====================="
+echo "  config      "
+#git config --global user.name 
+#git config --global user.email
+
+echo "===================="
+echo " git status "
+#git status
+
+echo "=================="
+#git add firstfile.txt
+
+echo "=================="
+#git commit -m "added first text file"
+
+echo "==================="
+#git add second_file.txt
+
+
+echo "================="
+#git commit -m "seconf feature add "
+
+
+echo "=================="
+
+#git log --oneline 
+
+echo "================"
+#git diff
+
+echo "====================="
+#git restore firstfile.txt
+
+echo "=================="
+#git status
+
+echo "=================="
+#git log --oneline
+
+echo "====================="
+#git revert 42bc005
+
+echo "==================="
+#git remote show origin  
+
+
