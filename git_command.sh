@@ -93,4 +93,7 @@ echo "====================="
 echo "==================="
 #git remote show origin  
 
-
+#git clone <url> 
+# cd repository name 
+# git pull
+# git checkout <branch-name>  or  git --branch <branch-name> clone <url>
