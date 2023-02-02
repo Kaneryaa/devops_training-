@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: node-todo-pod
+  namespace: node-todo-app
+spec:
+  containers:
+  - name: node
+    image: danish1234512/nodejs-jenkins
+    ports:
+     - containerPort: 8000
+  
