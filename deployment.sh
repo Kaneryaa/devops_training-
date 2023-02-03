@@ -6,4 +6,8 @@
 #kubectl expose deployment hello-minikube --type=NodePort --port=8080
 #minikube service hello-minikube --url
 #kubectl get svc
-kubectl delete svc hello-minikube
+#kubectl delete svc hello-minikube
+#kubectl get deploy
+#kubectl delete deploy hello-minikube
+#minikube stop
+minikube delete
