@@ -1,0 +1,7 @@
+##Open powershell as administrator and execute below command 
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')
+
+## Install Minikube with chocolaty
+## Close powershell and start again with admi
+
+choco install minikube kubernetes-cli -y)
