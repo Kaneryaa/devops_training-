@@ -13,7 +13,7 @@ echo "                   installtion               "
 #snap install kubectl --classic
 #kubectl get pods 
 #kubectl get pods --namespace=kube-system
-kubectl get namespace
+#kubectl get namespace
 #kubectl create namespace node-todo-app
 echo "============================================"
 echo "       pod                          "
@@ -23,7 +23,13 @@ echo "       pod                          "
 #minikube ssh
 #kubectl get pods --namespace=node-todo-app -o wide
 #kubectl delete -f project_pod.yaml
+#kubectl get pods
+#kubectl delete pods -n node-todo-app node-todo-app
+#kubectl get pods
 echo "================================================"
 echo "     javaProject            "
 #kubectl create -f javaProject.yaml
-kubectl describe pod java-app
+#kubectl describe pod java-app
+echo "=============================================="
+echo "               deployment                    "
+kubectl apply -f deployment.yaml
