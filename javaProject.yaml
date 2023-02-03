@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: java-app
+  labels:
+    app: java-app
+spec:
+  containers:
+    - name: java-app-container
+      image: imranvisualpath/freshtomapp:V7
+      ports:
+       - name: java-app-port
+         containerPort: 8080

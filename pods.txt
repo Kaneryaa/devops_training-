@@ -1,0 +1,26 @@
+********************* POds *********************
+A pod is the basic execution unit of a kubernates application-the smallest and simples unit in the kubernates object model that you create or deploy, A pod represent proccesses runnning on your cluester
+
+1. pods that run a single container 
+   -> the one-container per pod model is the most common kubernetes use case
+   -> pod as a wrapper around a single container
+   -> kubernetes manages the pods rather than the container directly
+2. multi container pod
+   ->tightly coupled and need to share resources 
+   ->one main container and other as sidecar or init container 
+   -> each pod is meant to run a single instance of a given application 
+   -> should use multlple pods to scale horizantally
+
+******************************************************
+kind      version 
+pod       v1
+service   v1
+deployment apps/v1
+ingress    networking.../v1beta1
+****************************************************
+#create and get pod info
+
+-> kubectl create -f pod-setup.yaml
+->kubectl get pod
+->kubectl describe pod webapp-pod
+

@@ -22,4 +22,8 @@ echo "       pod                          "
 #kubectl get nodes
 #minikube ssh
 #kubectl get pods --namespace=node-todo-app -o wide
-kubectl delete -f project_pod.yaml
+#kubectl delete -f project_pod.yaml
+echo "================================================"
+echo "     javaProject            "
+#kubectl create -f javaProject.yaml
+kubectl describe pod java-app
