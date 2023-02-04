@@ -4,7 +4,7 @@ metadata:
   name: django-todo-deployment 
   labels:
     app: django-app
-  namespace: node-todo-app
+      #namespace: node-todo-app
 spec:
   replicas: 3
   selector:
@@ -13,12 +13,12 @@ spec:
   template:
     metadata:
       labels:
-        app: djnago-app
+        app: django-app
     spec:
       containers:
         - name:  django-todo-ctr
           image: trainwithshubham/django-todo:latest
           ports:
-            containerPort: 8001
+            - containerPort: 8001
 
 
