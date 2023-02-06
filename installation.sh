@@ -30,6 +30,14 @@ echo "================================================"
 echo "     javaProject            "
 #kubectl create -f javaProject.yaml
 #kubectl describe pod java-app
+#kubectl get pods
+echo "==============================================="
+echo "           service                        "
+#kubectl create -f service.yaml
+#kubectl get svc
+#kubectl describe svc helloworld-service
+#kubectl delete svc helloworld-service
+kubectl get all
 echo "=============================================="
 echo "               deployment                    "
 #kubectl apply -f deployment.yaml
@@ -41,4 +49,4 @@ echo "               deployment                    "
 #kubectl get pods -n node-todo-app
 #kubectl delete pods django-todo-deployment-69d588ff4-5t76q
 #kubectl delete -f deployment.yaml
-kubectl delete pods -n node-todo-app django-todo-deployment-69d588ff4-2kvrv
+#kubectl delete pods -n node-todo-app django-todo-deployment-69d588ff4-2kvrv
