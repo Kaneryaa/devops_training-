@@ -50,3 +50,14 @@ echo "               deployment                    "
 #kubectl delete pods django-todo-deployment-69d588ff4-5t76q
 #kubectl delete -f deployment.yaml
 #kubectl delete pods -n node-todo-app django-todo-deployment-69d588ff4-2kvrv
+echo "================================================"
+echo "              Django Services                  "
+#kubectl apply -f django-svc.yaml
+#kubectl  get svc -n node-todo-app
+#kubectl get svc -n node-todo-app -o json
+#kubect get pods -n node-todo-app -o wide 
+#kubectl apply -f django-svc.yaml
+#kubectl delete -f django-svc.yaml
+minikube service django-svc -n node-todo-app --url 
+minikube service django-svc -n node-todo-app
+curl L http://192.168.59.105:30299
