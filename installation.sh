@@ -58,6 +58,9 @@ echo "              Django Services                  "
 #kubect get pods -n node-todo-app -o wide 
 #kubectl apply -f django-svc.yaml
 #kubectl delete -f django-svc.yaml
-minikube service django-svc -n node-todo-app --url 
+#minikube service django-svc -n node-todo-app --url 
+#minikube ssh
 minikube service django-svc -n node-todo-app
 curl L http://192.168.59.105:30299
+#ping 192.168.59.105
+

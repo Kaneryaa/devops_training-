@@ -19,6 +19,6 @@ spec:
         - name:  django-todo-ctr
           image: trainwithshubham/django-todo:latest
           ports:
-            - containerPort: 8001
+            - containerPort: 8000
 
 
