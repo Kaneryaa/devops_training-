@@ -1,0 +1,9 @@
+1 -> login to master & node with root user 
+2 -> prerequisites on all nodes
+3 -> install docker engine on all nodes 
+4 ->  excute kubeadm init -- on master ndoe 
+5 ->  save the node join command (kubeadm join ) returned by master node 
+6 ->  execute "kubeadm join" command returned by master setup , on node 
+7 -> exute user-setup script on master node 
+8 -> login to ubuntu user and tun "kubeadm get nodes"
+
