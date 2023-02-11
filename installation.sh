@@ -15,6 +15,7 @@ echo "            write inventry                    "
 #sudo cat  /etc/ansible/hosts
 #ansible server -m ping 
 #ansible server -a "df -h" 
-ansible server -a "sudo apt update"
+#ansible server -a "sudo apt update"
+ansible -i devloper devlopers -m ping
 
 
