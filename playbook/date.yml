@@ -1,0 +1,8 @@
+---
+- name: Setup WebServer
+  hosts: server
+  become: yes
+  tasks:
+    - name: date will show now
+      command: date
+        
