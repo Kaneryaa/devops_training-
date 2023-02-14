@@ -1,6 +1,6 @@
-web01 ansible_host=172.31.91.33 ansible_ssh_private_key_file=/home/ubuntu/.ssh/Ansible.pem
-web02 ansible_host=172.31.80.136  ansible_ssh_private_key_file=/home/ubuntu/.ssh/Ansible.pem
-db01 ansible_host=172.31.90.145  ansible_ssh_private_key_file=/home/ubuntu/.ssh/Ansible.pem
+web01 ansible_host=172.31.49.94 ansible_ssh_private_key_file=/home/ubuntu/devops_training-/exercise/Ansible.pem
+web02 ansible_host=172.31.52.216 ansible_ssh_private_key_file=/home/ubuntu/devops_training-/exercise/Ansible.pem
+db01 ansible_host=172.31.54.232 ansible_ssh_private_key_file=/home/ubuntu/devops_training-/exercise/Ansible.pem
 
 
 [websrvgrp]
