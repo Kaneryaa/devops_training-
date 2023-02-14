@@ -44,3 +44,7 @@
         name: mariadb
         state: started
 
+    - name: Create a new database with name 'accounts'
+      mysql_db:
+        name: accounts
+        state: present
