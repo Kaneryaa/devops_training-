@@ -1,13 +1,28 @@
-- name: this playbook will install nginx 
-  hosts: websrvgrp
-  become: yes 
+---
+- name: Install Nginx
+  become: true
+  hosts: db01
+  
   tasks:
-    - name: Install nginx
-      apt:
-        name: nginx 
-        state: latest
-    - name: Start nginx
-      service:
-        name: nginx
-        state: started
-        enabled: yes
+  - name: Update package cache
+    apt:
+      update_cache: yes
+      
+  - name: Install Nginx
+    apt:
+      name: nginx
+      state: present
+      
+  - name: Start Nginx
+    service:
+      name: nginx
+      state: started
+
+  - name: Copy index file
+    copy:
+        src: /home/ubuntu/devops_training-/exercise/html/index.html
+        dest: /var/www/html/index.html
+        owner: root
+        group: root
+        mode: '0644'
+        backup: yes
