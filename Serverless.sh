@@ -7,7 +7,8 @@
 #sudo npm install -g serverless
 	
 # Create a new serverless project
-serverless
+#serverless
+git clone -b dev  https://github.com/LondheShubham153/aws-node-http-api-project.git
 
 
 
