@@ -14,6 +14,11 @@
 #Download the package information from HashiCorp.
 #sudo apt update
 #Install Terraform from the new repository.
-sudo apt-get install terraform
+#sudo apt-get install terraform
+# terraform  initalization 
+#terraform init
+#terraform validate
+#terraform plan
+terraform apply
 
 
