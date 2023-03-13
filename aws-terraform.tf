@@ -23,6 +23,14 @@ resource "aws_instance" "my_aws_instance" {
 	}
 }
 
+resource "aws_s3_bucket" "my_s3_bucket" {
+	bucket = "bucket_terraforms_danish"
+	tags = {
+		Name = "bucket_terraforms_danish"
+	
+	}
+}
+
 output "ec2_public_ip" {
 	value = aws_instance.my_aws_instance.public_ip
 }
