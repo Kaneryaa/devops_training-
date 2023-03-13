@@ -21,3 +21,7 @@ resource "aws_instance" "my_aws_instance" {
 		name = "remote_lunch"
 	}
 }
+
+output "ec2_public_ip" {
+	value = aws_instance.my_aws_instance.public_ip
+}
