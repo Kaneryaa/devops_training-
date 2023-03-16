@@ -5,7 +5,9 @@ provider "aws" {
 }
 
 locals {
-	instance_name = toset(["front-end" , "back-end" , "tester"])
+	instance_name = {"front-end":"ami-005f9685cb30f234b" , "back-end" :"ami-00805552fa999b1a0
+" , "tester":"ami-0c2b0d3fb02824d92
+"}
 }
 
 resource "aws_instance" "instance-create" {
