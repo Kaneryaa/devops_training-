@@ -104,3 +104,6 @@ echo "==================="
 
 #Set your email address:
 #git config --global user.email "MY_NAME@example.com"
+#git switch commadn one branch to anoter 
+git switch <branch-name>
+
