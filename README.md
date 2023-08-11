@@ -24,4 +24,4 @@ Docker provides several networking options that allow containers to communicate 
 
 Please note that Docker and its ecosystem might have evolved since my last update, so I recommend checking the latest Docker documentation or resources for the most up-to-date information on networking options.
 
-# ip address show 
+# ip address show (is a command)
