@@ -23,3 +23,5 @@ Docker provides several networking options that allow containers to communicate 
 10. **Port Mapping**: While not a network type itself, port mapping is a common practice in Docker networking. It involves exposing container ports to the host or external network, allowing external services to communicate with containers.
 
 Please note that Docker and its ecosystem might have evolved since my last update, so I recommend checking the latest Docker documentation or resources for the most up-to-date information on networking options.
+
+# ip address show 
