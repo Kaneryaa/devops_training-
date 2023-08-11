@@ -24,6 +24,24 @@ Docker provides several networking options that allow containers to communicate 
 
 Please note that Docker and its ecosystem might have evolved since my last update, so I recommend checking the latest Docker documentation or resources for the most up-to-date information on networking options.
 
-#command
+# command
 ip address show 
 sudo useradd -aG $USER
+----------------------------------------
+docker network ls
+NETWORK ID     NAME      DRIVER    SCOPE
+cf815646f7c2   bridge    bridge    local
+8cb930b241ae   host      host      local
+9843954aa8fd   none      null      local
+--------------------------------------------
+docker run -itd --name nginx nginx
+Unable to find image 'nginx:latest' locally
+-----------------------------------------------------
+ docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
+1b67b4717512   nginx     "/docker-entrypoint.…"   28 seconds ago   Up 14 seconds   80/tcp    nginx
+-----------------------------------------------------------------------------------------
+%docker exec -it nginx sh
+# ping danish.servoxi.com
+sh: 1: ping: not found
+--------------------------------------------------
