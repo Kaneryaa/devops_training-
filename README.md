@@ -45,3 +45,39 @@ CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS       
 # ping danish.servoxi.com
 sh: 1: ping: not found
 --------------------------------------------------
+ sudo usermod -aG docker $USER
+  docker network ls
+NETWORK ID     NAME      DRIVER    SCOPE
+f270a245bc7e   bridge    bridge    local
+8cb930b241ae   host      host      local
+9843954aa8fd   none      null      local
+---------------------------------------------------
+ **bydefaul bridge***
+ docker run -itd --name naginx-defau nginx
+Unable to find image 'nginx:latest' locally
+ docker inspect bridge
+[
+    {
+        "Name": "bridge",
+        "Id": "f270a24
+    }
+    {
+    "Name": "naginx-defau",
+     "MacAddress": "02:42:ac:11:00:02",
+      "IPv4Address": "172.17.0.2/16",
+
+    }
+]
+ --------------------------------------------------
+ **custom brifge**
+docker network create servoxi
+5285f5fe6a96dc116458c90179a71c6df6d2ce37eb45cab3a4a83ef22fb4dc08
+
+ docker network ls
+NETWORK ID     NAME      DRIVER    SCOPE
+f270a245bc7e   bridge    bridge    local
+8cb930b241ae   host      host      local
+9843954aa8fd   none      null      local
+5285f5fe6a96   servoxi   bridge    local
+
+
