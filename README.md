@@ -80,4 +80,28 @@ f270a245bc7e   bridge    bridge    local
 9843954aa8fd   none      null      local
 5285f5fe6a96   servoxi   bridge    local
 
+└─$ docker run -itd --name naginx-custom-1 --network servoxi nginx
+5a455bfacb1f76f1823ba155584ee6b9ddc288f9fe0bf27ca62c9267be42ecbe
+
+┌──(vagrant㉿packerAutoKali-default)-[~]
+└─$ docker run -itd --name naginx-custom-2 --network servoxi nginx
+969b6d36573a67b0d595d929234caf8d92c92adc77c8c0fe171aa436eca2bf45
+
+ docker inspect servoxi
+[
+    {
+        "Name": "servoxi",
+        "Id": "528
+    }
+    {
+    "Name": "naginx-custom-1",
+   "MacAddress": "02:42:ac:12:00:02",
+    "IPv4Address": "172.18.0.2/16",
+   }
+   {
+      "Name": "naginx-custom-2",
+       "MacAddress": "02:42:ac:12:00:03",
+       "IPv4Address": "172.18.0.3/16",
+   }
+
 
