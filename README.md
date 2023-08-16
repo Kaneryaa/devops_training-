@@ -114,4 +114,10 @@ Step 1/8 : FROM python:alpine3.7
 docker run -itd --name servoxi-python -p 5000:5000 --network servoxi servoxi:latest
 002eb23421fbe637b4336e50c650e700e179d0845deab97460abf6b25b830ff9
 
+└─$ docker ps -a
+CONTAINER ID   IMAGE            COMMAND           -       CREATED       STATUS
+002eb23421fb   servoxi:latest   "python app.py"   
+
+![image](https://github.com/Kaneryaa/devops_training-/assets/89991677/3b801057-a5cc-473d-ada0-91a6e991256b)
+
 
