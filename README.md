@@ -118,6 +118,43 @@ docker run -itd --name servoxi-python -p 5000:5000 --network servoxi servoxi:lat
 CONTAINER ID   IMAGE            COMMAND           -       CREATED       STATUS
 002eb23421fb   servoxi:latest   "python app.py"   
 
-![image](https://github.com/Kaneryaa/devops_training-/assets/89991677/3b801057-a5cc-473d-ada0-91a6e991256b)
+─$ docker exec -it 56e5ae50ae36 sh
+/app #
+
+*/app # ping danish.servoxi.com
+PING danish.servoxi.com (217.21.95.197): 56 data bytes
+64 bytes from 217.21.95.197: seq=0 ttl=54 time=13.396 ms
+64 bytes from 217.21.95.197: seq=1 ttl=54 time=7.271 ms
+
+* docker run -d --name mongo mongo
+Unable to find image 'mongo:latest' locally
+latest: Pulling from library/mongo
+
+$ docker logs 56e5ae50ae36
+192.168.33.1 - - [17/Aug/2023 04:25:22] "GET / HTTP/1.1" 200 -
+192.168.33.1 - - [17/Aug/2023 04:25:23] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.33.1 - - [17/Aug/2023 04:26:21] "GET / HTTP/1.1" 200 -
+
+pymongo.errors.ServerSelectionTimeoutError: mongo:27017: [Errno -2] 
+192.168.33.1 - - [17/Aug/2023 04:37:28] "GET /tasks HTTP/1.1" 500 -
+
+└─$ docker kill mongo
+mongo
+
+*docker run -d --name mongo --network servoxi mongo
+
+---------------------------------------------------
+**None Network**
+------------------------------------------------------
+
+docker run -d --name nginx-none --network none nginx
+ecd1132e3a38bb16e236e5dd0d6452f499247aa9c3ec6bc3a9ac2016446ccaf1
+
+---------------------------------------------------
+**overlayer**
+------------------------------------------------------
+
+
+
 
 
