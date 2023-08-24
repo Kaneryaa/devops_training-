@@ -159,10 +159,9 @@ ecd1132e3a38bb16e236e5dd0d6452f499247aa9c3ec6bc3a9ac2016446ccaf1
 ---------------------------------------------------
 **Grafana**
 ---------------------------------------------------
+Docs:  https://docs.google.com/document/d/1kHhk2LYss_c2pbBCCSXo4sqaqwNF3bj_MIiqm8L5b1U/edit 
 
-
-
-
+grafana loki url : http://192.168.33.10:3100/ready && http://192.168.33.10:3100/metrics
 
 
 
