@@ -163,5 +163,8 @@ Docs:  https://docs.google.com/document/d/1kHhk2LYss_c2pbBCCSXo4sqaqwNF3bj_MIiqm
 
 grafana loki url : http://192.168.33.10:3100/ready && http://192.168.33.10:3100/metrics
 
+1. prometheus  has both own database and monitoring 2. grafana 3. inflex db 4. hands on
+
+
 
 
